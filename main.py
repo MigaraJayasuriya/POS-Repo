@@ -12,6 +12,7 @@ from random import randrange
 app = FastAPI()
 
 class Item(BaseModel):
+    item_id: int
     name: str
     buyingprice: float
     sellingprice: float
